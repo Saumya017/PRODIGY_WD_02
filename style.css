@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('wall-art-prints-paisley-patterns.jpg');
+}
+
+section {
+    text-align: center;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    background-color: #99b1e4;
+    margin-top: 4px;
+    border: 20px solid #000000;
+    box-shadow: 0px 10px 36px 16px rgba(0,0,0,0.1);
+}
+
+.game--title {
+    padding-top: 20px;
+}
+
+.player--names {
+    margin-bottom: 20px;
+}
+
+.player--names input {
+    margin: 5px;
+    padding: 5px;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #333; 
+    cursor: pointer;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.game--status {
+    margin-top: 20px;
+    color: #333;
+}
+
+.game--restart {
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.game--restart:hover {
+    background-color: #c1a2fe;
+}
+
+.winning-cell {
+    text-decoration: line-through;
+}
+
+.cell.clicked {
+    background-color: #ffc107; 
+}
